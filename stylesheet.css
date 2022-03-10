@@ -29,6 +29,14 @@ button {
     
 }
 
+.input-section {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+input {
+    height: 25px;
+}
 
 
 .bingo-frame {

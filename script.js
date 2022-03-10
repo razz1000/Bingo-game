@@ -78,3 +78,9 @@ let buttonclickOnBoardgenerator = () => {
     }
     }
  */ 
+
+    let generateTheAmountOfUserBoards = () => {
+        let numberOfBoards = document.getElementById("input-field").value;
+        alert(document.getElementById("input-field").value)
+
+    }
