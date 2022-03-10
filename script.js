@@ -18,17 +18,18 @@ let createBingoNumbers = () => {
 }
 createBingoNumbers();
 
+
 //This below is the function for the buttonClickRandomNumberGenerator   
  let buttonClickRandomNumberGenerator = () => {
     let newBingoNumber = document.querySelectorAll(".bingo-number")
-
+ 
     function getRandomNumber() { 
         var randomNumber = Math.floor( Math.random() * 76 ) + 1; return randomNumber; } 
         let dieroll = getRandomNumber();
 
+
     for (let i = 1; i < newBingoNumber.length; i++) {
     if (dieroll === parseInt(newBingoNumber[i].innerText)) {
-
         newBingoNumber[i].classList.add("highlighted-cell")
         buttonClickRandomNumberGenerator;            
     }
@@ -36,7 +37,7 @@ createBingoNumbers();
 }
 
 
-
+// Creating the 24 userboard numbers.
 let totalUserBoardNumbers = 24;
  
 let createUserBoard = () => {
@@ -49,3 +50,20 @@ let createUserBoard = () => {
     }
 }
 createUserBoard();
+
+/* 
+let buttonclickOnBoardgenerator = () => {   
+    let newUserBoardNumber = document.querySelectorAll(".userboard-number")
+     
+         function getRandomNumber() { 
+            var randomNumber = Math.floor( Math.random() * 76 ) + 1; return randomNumber; } 
+            let dieroll = getRandomNumber();  */
+        
+   /*          for (let i = 1; i < newUserBoardNumber.length; i++) {
+                if(dieroll === parseInt(newUserBoardNumber[i].innerText)) {
+                    newUserBoardNumber[i].classList.add("highlighted-cell")
+                    buttonclickOnBoardgenerator;
+     }
+    }
+    }
+ */ 
