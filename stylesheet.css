@@ -1,3 +1,5 @@
+
+
 body {
     background-color: rgb(70, 67, 67);
 }
@@ -9,11 +11,24 @@ h1 {
     margin-bottom: 2%;
 }
 
+.button-top {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+button {
+    border: 3px solid green;
+    height: 50px;
+    
+}
+
+
 
 .bingo-frame {
     display: grid;
     gap: 1em;
     margin: 0.5em;
+    
 }
 
 @media(min-width:1000px) {
@@ -23,8 +38,6 @@ h1 {
        
     }
 }
-
-
 
 .bingo-number {
     color: black;;
@@ -36,3 +49,6 @@ h1 {
     padding: 0.7em;
 }
   
+.highlighted-cell {
+    background-color: red; 
+}
