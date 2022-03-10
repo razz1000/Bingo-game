@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(70, 67, 67);
+}
+
+h1 {
+    color: rgb(209, 206, 206);
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.bingo-frame {
+    display: grid;
+    gap: 1em;
+    margin: 0.5em;
+}
+
+@media(min-width:1000px) {
+    .bingo-frame {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+       
+    }
+}
+
+
+
+.bingo-number {
+    color: black;;
+    background: rgba(243, 247, 248, 0.88); 
+    border-color: rgba(173,206,195,.38);
+    border: solid 1px;
+    border-color: rgba(210,225,236,.88);
+    border-radius: 3px 10px 3px 3px;
+    padding: 0.7em;
+}
+  
