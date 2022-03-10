@@ -4,9 +4,7 @@ let onLoadFunction = () => {
 }
  */
 
-
-
-// Creating the 76 numbers 
+// Creating the 76 numbers for the bingo Board
 let totalBingoNumbers = 76;
  
 let createBingoNumbers = () => {
@@ -20,17 +18,9 @@ let createBingoNumbers = () => {
 }
 createBingoNumbers();
 
-
-// Function for callling the random number 
-let randomNumberGenerated = Math.floor(Math.random() * 76);
-
-
-
-
-  
+//This below is the function for the buttonClickRandomNumberGenerator   
  let buttonClickRandomNumberGenerator = () => {
     let newBingoNumber = document.querySelectorAll(".bingo-number")
-
 
     function getRandomNumber() { 
         var randomNumber = Math.floor( Math.random() * 76 ) + 1; return randomNumber; } 
@@ -42,27 +32,20 @@ let randomNumberGenerated = Math.floor(Math.random() * 76);
         newBingoNumber[i].classList.add("highlighted-cell")
         buttonClickRandomNumberGenerator;            
     }
-
     }
 }
-   
-
-/* 
-let buttonClickRandomNumberGenerator = () => {
-    let newBingoNumber = document.querySelectorAll(".bingo-number")[0]
-    newBingoNumber.classList.add("highlighted-cell")
-    
-}
- */
 
 
-/*  
-    var random;
-    var max = 8
-    function findRandom() {
-      random = Math.floor(Math.random() * max) //Finds number between 0 - max
-      console.log(random)
+
+let totalUserBoardNumbers = 24;
+ 
+let createUserBoard = () => {
+    let userBoardNumber = document.querySelector(".userboard-frame");
+    for (let i = 1; i <= totalUserBoardNumbers; i++) {
+        let newUserBoardNumber = document.createElement("div")
+        newUserBoardNumber.innerText += i 
+        userBoardNumber.appendChild(newUserBoardNumber);
+        newUserBoardNumber.classList.add("userboard-number")
     }
-    findRandom();
-
-    let randomNumber = findRandom(). */
+}
+createUserBoard();
